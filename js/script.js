@@ -49,7 +49,12 @@ function loadGalleryImages() {
     images.forEach((imagePath, index) => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
-        galleryItem.innerHTML = `<img src="${imagePath}" alt="Art piece ${index + 1}" onerror="this.parentElement.style.display='none';">`;
+        const img = document.createElement('img');
+        img.src = imagePath;
+        img.alt = `Art piece ${index + 1}`;
+        img.onerror = function() { this.parentElement.style.display = 'none'; };
+        img.addEventListener('click', () => openModal(imagePath));
+        galleryItem.appendChild(img);
         galleryGrid.appendChild(galleryItem);
     });
 }
@@ -157,3 +162,44 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Modal functionality
+function openModal(imagePath) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    if (modal && modalImage) {
+        modalImage.src = imagePath;
+        modal.classList.add('active');
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.classList.remove('active');
+    }
+}
+
+// Modal event listeners
+const modal = document.getElementById('imageModal');
+const modalClose = document.querySelector('.modal-close');
+
+if (modalClose) {
+    modalClose.addEventListener('click', closeModal);
+}
+
+if (modal) {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+
