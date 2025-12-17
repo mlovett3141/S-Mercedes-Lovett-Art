@@ -105,12 +105,25 @@ function loadGalleryImages() {
     images.forEach((imagePath, index) => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
+        
+        // Extract filename and create label
+        const filename = imagePath.split('/').pop().replace(/\.[^/.]+$/, '');
+        const cleanLabel = filename.replace(/\s*\([^)]*\)$/, ''); // Remove parentheses at the end
+        const label = cleanLabel.replace(/_/g, '<br>');
+        
         const img = document.createElement('img');
         img.src = imagePath;
-        img.alt = `Art piece ${index + 1}`;
+        img.alt = filename;
         img.onerror = function() { this.parentElement.style.display = 'none'; };
         img.addEventListener('click', () => openModal(imagePath));
         galleryItem.appendChild(img);
+        
+        // Add label below image
+        const labelDiv = document.createElement('div');
+        labelDiv.className = 'gallery-label';
+        labelDiv.innerHTML = label;
+        galleryItem.appendChild(labelDiv);
+        
         galleryGrid.appendChild(galleryItem);
     });
 }
