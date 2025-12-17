@@ -102,7 +102,44 @@ function loadGalleryImages() {
         'Assets/Untitled_May 2009.jpg'
     ];
 
-    images.forEach((imagePath, index) => {
+    // Sort images by date (newest to oldest)
+    const monthMap = {
+        'january': 1, 'febuary': 2, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
+        'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12
+    };
+
+    const sortedImages = images.sort((a, b) => {
+        // Extract filenames
+        const fileA = a.split('/').pop().replace(/\.[^/.]+$/, '');
+        const fileB = b.split('/').pop().replace(/\.[^/.]+$/, '');
+        
+        // Extract dates from filenames
+        const dateRegex = /([A-Za-z]+)\s+(\d{4})/;
+        const matchA = fileA.match(dateRegex);
+        const matchB = fileB.match(dateRegex);
+        
+        // If both have dates, sort by date (newest first)
+        if (matchA && matchB) {
+            const yearA = parseInt(matchA[2]);
+            const monthA = monthMap[matchA[1].toLowerCase()];
+            const dateA = new Date(yearA, monthA - 1);
+            
+            const yearB = parseInt(matchB[2]);
+            const monthB = monthMap[matchB[1].toLowerCase()];
+            const dateB = new Date(yearB, monthB - 1);
+            
+            return dateB - dateA; // Newest first
+        }
+        
+        // If only one has a date, that one comes first
+        if (matchA) return -1;
+        if (matchB) return 1;
+        
+        // If neither has a date, keep original order
+        return 0;
+    });
+
+    sortedImages.forEach((imagePath, index) => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
         
