@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Garamond', serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -26,7 +26,7 @@ a {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #2c3e50;
+    background-color: #000000;
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -47,7 +47,7 @@ a {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #e74c3c;
+    color: #CC9D34;
 }
 
 .nav-menu {
@@ -65,7 +65,7 @@ a {
 
 .nav-link:hover,
 .nav-link.active {
-    background-color: #e74c3c;
+    background-color: #CC9D34;
     color: white;
 }
 
@@ -109,7 +109,7 @@ a {
 
 .cta-button {
     display: inline-block;
-    background-color: #e74c3c;
+    background-color: #CC9D34;
     color: white;
     padding: 12px 30px;
     border-radius: 50px;
@@ -119,7 +119,7 @@ a {
 }
 
 .cta-button:hover {
-    background-color: #c0392b;
+    background-color: #9d7426;
 }
 
 /* Gallery Section */
@@ -132,7 +132,7 @@ a {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .gallery-grid {
@@ -209,7 +209,7 @@ a {
 }
 
 .modal-close:hover {
-    color: #e74c3c;
+    color: #CC9D34;
 }
 
 @keyframes fadeIn {
@@ -242,7 +242,7 @@ a {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .about-content {
@@ -251,13 +251,13 @@ a {
 }
 
 .about-text h2 {
-    color: #e74c3c;
+    color: #CC9D34;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .about-text h3 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 1.3rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -280,7 +280,7 @@ a {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .news-feed {
@@ -292,7 +292,7 @@ a {
     background-color: #f9f9f9;
     padding: 2rem;
     margin-bottom: 2rem;
-    border-left: 4px solid #e74c3c;
+    border-left: 4px solid #CC9D34;
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease;
@@ -303,14 +303,14 @@ a {
 }
 
 .news-date {
-    color: #e74c3c;
+    color: #CC9D34;
     font-weight: bold;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
 .news-item h3 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -330,7 +330,7 @@ a {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .contact-wrapper {
@@ -342,7 +342,7 @@ a {
 }
 
 .contact-info h2 {
-    color: #e74c3c;
+    color: #CC9D34;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -357,18 +357,18 @@ a {
 }
 
 .info-item h3 {
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
 .social-link {
-    color: #e74c3c;
+    color: #CC9D34;
     transition: color 0.3s ease;
 }
 
 .social-link:hover {
-    color: #c0392b;
+    color: #9d7426;
 }
 
 /* Contact Form */
@@ -379,7 +379,7 @@ a {
 }
 
 .contact-form h2 {
-    color: #e74c3c;
+    color: #CC9D34;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -391,7 +391,7 @@ a {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #2c3e50;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -409,12 +409,12 @@ a {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #e74c3c;
-    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+    border-color: #CC9D34;
+    box-shadow: 0 0 5px rgba(204, 157, 52, 0.3);
 }
 
 .submit-btn {
-    background-color: #e74c3c;
+    background-color: #CC9D34;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -427,7 +427,7 @@ a {
 }
 
 .submit-btn:hover {
-    background-color: #c0392b;
+    background-color: #9d7426;
 }
 
 .form-message {
@@ -454,7 +454,7 @@ a {
 
 /* Footer */
 .footer {
-    background-color: #2c3e50;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 2rem 20px;
@@ -468,7 +468,7 @@ a {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: #2c3e50;
+        background-color: #000000;
         width: 100%;
         text-align: center;
         transition: 0.3s;
