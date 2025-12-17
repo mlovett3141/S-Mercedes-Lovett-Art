@@ -248,10 +248,7 @@ a {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+    display: block;
 }
 
 .about-text h2 {
@@ -276,9 +273,9 @@ a {
 
 .about-gallery {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    order: -1;
+    margin-top: 2rem;
 }
 
 .about-gallery img {
