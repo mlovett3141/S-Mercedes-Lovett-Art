@@ -147,7 +147,14 @@ function loadGalleryImages() {
         // Extract filename and create label
         const filename = imagePath.split('/').pop().replace(/\.[^/.]+$/, '');
         const cleanLabel = filename.replace(/\s*\([^)]*\)$/, ''); // Remove parentheses at the end
-        const label = cleanLabel.replace(/_/g, '<br>');
+        // Split on <br> to separate lines
+        const labelLines = cleanLabel.split('_');
+        let label = '';
+        if (labelLines.length > 1) {
+            label = `<strong>${labelLines[0]}</strong><br>${labelLines.slice(1).join('<br>')}`;
+        } else {
+            label = `<strong>${labelLines[0]}</strong>`;
+        }
         
         const img = document.createElement('img');
         img.src = imagePath;
