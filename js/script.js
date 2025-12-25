@@ -100,7 +100,7 @@ function loadGalleryImages() {
         'Assets/gallery/Untitled_Acrylic on canvas  40 x 30_July 2024.png',
         'Assets/gallery/Untitled_Oils on wood  30 x 20_September 2025.png',
         'Assets/gallery/Whooping Cranes and Wolves_Acrylic on linen  48 x 36_November 2025.png',
-        'Assets/gallery/With Blue Fox_Oil on canvas  40 x 30_Septrmber 2025.png'
+        'Assets/gallery/With Blue Fox_Oil on canvas  40 x 30_September 2025.png'
     ];
 
     // Sort images by date (newest to oldest)
