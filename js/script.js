@@ -94,7 +94,7 @@ function loadGalleryImages() {
         'Assets/gallery/Untitled_Acrylic on canvas  24 x 36_May 2017.png',
         'Assets/gallery/Untitled_Acrylic on canvas  30 x 20_May 2012.png',
         'Assets/gallery/Untitled_Acrylic on canvas  30 x 40_August 2020.png',
-        'Assets/gallery/Untitled_Acrylic on canvas  30 x 40_Decmber 2024.png',
+        'Assets/gallery/Untitled_Acrylic on canvas  30 x 40_December 2024.png',
         'Assets/gallery/Untitled_Acrylic on canvas  36 x 36_May 2009.png',
         'Assets/gallery/Untitled_Acrylic on canvas  40 x 20_May 2023.png',
         'Assets/gallery/Untitled_Acrylic on canvas  40 x 30_July 2024.png',
