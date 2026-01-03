@@ -40,6 +40,7 @@ function loadGalleryImages() {
 
     // List of image files to display (auto-generated from Assets/gallery)
     const images = [
+        // ...existing code...
         'Assets/gallery/African Dream_Acrylic on canvas  30 x 40_January 2006.png',
         'Assets/gallery/Allegory_Acrylic on canvas  24 x 36_May 2020.png',
         'Assets/gallery/Anxiety_Acrylic on wood  12 x 12_March 2024.png',
@@ -50,7 +51,6 @@ function loadGalleryImages() {
         'Assets/gallery/Costa Rica_Acrylic on wood panel  24 x 30_March 2023.png',
         'Assets/gallery/Coyote, Moon Child, Bobcat Woman, and Raven_March 2020.png',
         'Assets/gallery/Dancing by the Great Western sugar refinery_Acrylic on canvas  40 x 30_Febuary 2025.png',
-        'Assets/gallery/Death is a thing with feathers  18 x 12_Febuary 2023.png',
         'Assets/gallery/Dodo_Acrylic on canvas  36 x 36_August 2024.png',
         'Assets/gallery/Echos_Acrylic on canvas  40 x 30_Febuary 2011.png',
         'Assets/gallery/Evangeline\'s Secret Life_Acrylic on canvas  30 x 40_October 2009.png',
@@ -76,7 +76,6 @@ function loadGalleryImages() {
         'Assets/gallery/Pink Octopus_Acrylic on canvas  12 x 12_December 2022.png',
         'Assets/gallery/Pirate Cats_Acrylic on canvas  12 x 12_December 2022.png',
         'Assets/gallery/Pleistocene Cowgirl_Acrylic on wood panel  24 x 30_October 2024.png',
-        'Assets/gallery/Pterosaurs_Acrylic on canvas  40 x 30_December 2022.png',
         'Assets/gallery/Raven Haven in spring time_Acrylic on Canvas  24 x 30_March 2025.png',
         'Assets/gallery/Robert Lovett_Acrylic on canvas  36 x 36_November 2021.png',
         'Assets/gallery/Self portrait as a HarpyAcrylic on canvas  24 x 30_August 2010.png',
