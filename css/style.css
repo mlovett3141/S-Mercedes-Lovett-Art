@@ -1,3 +1,7 @@
+/* Extra space for news update paragraphs */
+.news-extra-space {
+    margin-top: 1.2em;
+}
 /* Reset and Base Styles */
 * {
     margin: 0;
