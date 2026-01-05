@@ -58,7 +58,7 @@ function loadGalleryImages() {
         'Assets/gallery/Flying Lessons_Acrylic on canvas  48 x 48_July 2023.png',
         'Assets/gallery/Flying Monkeys in Space_Acrylic on canvas  36 x 36_June 2015.png',
         'Assets/gallery/Griffin_Acrylic on wood panel  36 x 24_November 2024.png',
-        'Assets/gallery/Harpy_Acrylic on canvas  40 x 30_August 2020January 2025.png',
+        'Assets/gallery/Harpy_Acrylic on canvas  40 x 30_January 2025.png',
         'Assets/gallery/Hell Creek_Acrylic on canvas  48 x 60_Febuary 2017.png',
         'Assets/gallery/Iberia_Acrylic on canvas  40 x 30_March 2025.png',
         'Assets/gallery/Icarus_Acrylic on canvas  36 x 36_November 2011.png',
