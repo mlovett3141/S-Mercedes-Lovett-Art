@@ -78,6 +78,8 @@ function loadGalleryImages() {
         'Assets/gallery/Pleistocene Cowgirl_Acrylic on wood panel  24 x 30_October 2024.png',
         'Assets/gallery/Raven Haven in spring time_Acrylic on Canvas  24 x 30_March 2025.png',
         'Assets/gallery/Robert Lovett_Acrylic on canvas  36 x 36_November 2021.png',
+        'Assets/gallery/Hippopotamus_Acrylic on linen  30 x 20_March 2026.png',
+        'Assets/gallery/Self-Portrait as a Werewolf_Oils on wood  30 x 30_March 2026.png',
         'Assets/gallery/Self portrait as a HarpyAcrylic on canvas  24 x 30_August 2010.png',
         'Assets/gallery/Sphinx_Acrylic on canvas  20 x 30_Febuary 2022.png',
         'Assets/gallery/Steven_Acrylic on canvas  30 x 40_July 2024.png',
