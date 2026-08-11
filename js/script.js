@@ -145,6 +145,14 @@ function loadGalleryImages() {
         return 0;
     });
 
+    function setMasonrySpan(item) {
+        const rowHeight = 8;
+        const rowGap = 16;
+        const itemHeight = item.scrollHeight;
+        const span = Math.ceil((itemHeight + rowGap) / (rowHeight + rowGap));
+        item.style.gridRowEnd = `span ${span}`;
+    }
+
     sortedImages.forEach((imagePath, index) => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
@@ -175,6 +183,12 @@ function loadGalleryImages() {
         galleryItem.appendChild(labelDiv);
         
         galleryGrid.appendChild(galleryItem);
+
+        const updateSpan = () => setMasonrySpan(galleryItem);
+        img.addEventListener('load', updateSpan);
+        if (img.complete) {
+            updateSpan();
+        }
     });
 }
 
