@@ -108,16 +108,18 @@ a:hover {
 
 .hamburger {
     display: none;
-    flex-direction: column;
+    width: 52px;
+    height: 52px;
     cursor: pointer;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3crect x='4' y='6' width='16' height='2' rx='1' fill='white'/%3e%3crect x='4' y='11' width='16' height='2' rx='1' fill='white'/%3e%3crect x='4' y='16' width='16' height='2' rx='1' fill='white'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px 32px;
+    padding: 12px;
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: 0.3s;
+    display: none;
 }
 
 /* Hero Section */
@@ -216,7 +218,7 @@ a:hover {
 .about-section h1::before,
 .news-section h1::before,
 .contact-section h1::before {
-    content: '✦';
+    content: '\2605';
     position: absolute;
     left: 50%;
     bottom: -0.9rem;
@@ -659,7 +661,10 @@ a:hover {
     .nav-menu.active {
         left: 0;
     }
-
+    .nav-link.active {
+        background-color: transparent;
+        border-color: transparent;
+    }
     .hamburger {
         display: flex;
     }
