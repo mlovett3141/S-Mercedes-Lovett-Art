@@ -40,17 +40,15 @@ function loadGalleryImages() {
 
     // List of image files to display (auto-generated from Assets/gallery)
     const images = [
-        // ...existing code...
         'Assets/gallery/African Dream_Acrylic on canvas  30 x 40_January 2006.png',
         'Assets/gallery/Allegory_Acrylic on canvas  24 x 36_May 2020.png',
         'Assets/gallery/Anxiety_Acrylic on wood  12 x 12_March 2024.png',
         'Assets/gallery/Beatrix and the Night Monkeys_Acrylic on wood panel  24 x 24_April 2026.png',
         'Assets/gallery/Buffalo Girls_Acrylic on canvas  20 x 12_January 2023.png',
-        'Assets/gallery/Carter_Acrylic on canvas  40 x 30_July 2022.png',
-        'Assets/gallery/Wave Clouds_Acrylic on canvas  40 x 30_May 2024.png',
+        'Assets/gallery/Carter_Acrylic on canvas  40 x 30_July 2022(1).png',
         'Assets/gallery/Congo_Acrylic on wood panel  24 x 30_September 2022.png',
         'Assets/gallery/Costa Rica_Acrylic on wood panel  24 x 30_March 2023.png',
-        'Assets/gallery/Coyote, Moon Child, Bobcat Woman, and Raven_March 2020.png',
+        'Assets/gallery/Coyote, Moon Child, Bobcat Woman, and Raven_Acrylic on canvas  48 X 36_March 2020.png',
         'Assets/gallery/Dancing by the Great Western sugar refinery_Acrylic on canvas  40 x 30_Febuary 2025.png',
         'Assets/gallery/Dodo_Acrylic on canvas  36 x 36_August 2024.png',
         'Assets/gallery/Echos_Acrylic on canvas  40 x 30_Febuary 2011.png',
@@ -61,55 +59,54 @@ function loadGalleryImages() {
         'Assets/gallery/Griffin_Acrylic on wood panel  36 x 24_November 2024.png',
         'Assets/gallery/Harpy_Acrylic on canvas  40 x 30_January 2025.png',
         'Assets/gallery/Hell Creek_Acrylic on canvas  48 x 60_Febuary 2017.png',
-        'Assets/gallery/Iberia_Acrylic on canvas  40 x 30_March 2025.png',
+        'Assets/gallery/Iberia_Acrylic on canvas  40 x 30_March 2025(1).png',
         'Assets/gallery/Icarus_Acrylic on canvas  36 x 36_November 2011.png',
-        'Assets/gallery/Icraus_Acrylic on canvas  40 x 30_July 2025.png',
+        'Assets/gallery/Icraus_Acrylic on canvas  40 x 30_July 2025(1).png',
         'Assets/gallery/Indri Aria_Acrylic on canvas  30 x 40_May 2025.png',
         'Assets/gallery/Jellyfish Clouds_Acrylic on canvas  40 x 30_Febuary 2015.png',
         'Assets/gallery/Kudu_Acrylic on wood panel  24 x 30_June 2025.png',
-        'Assets/gallery/Madagascar_Acrylic on canvas  36 x 36_May 2009.png',
-        'Assets/gallery/Kali_Acrylic on linen  36 x 48_May 2026.png',
-        'Assets/gallery/Ophelia’s Whooping Crane_Acrylic on wood  18 x 12_July 2022.png',
+        'Assets/gallery/Madagascar_Acrylic on canvas  24 x 24_May 2009.png',
+        'Assets/gallery/Naiad_Acrylic on linen  30 x 40_March 2026(2).png',
+        'Assets/gallery/Oligocene_ Acrylic on canvas  40 x 30_October 2018.png',
+        'Assets/gallery/Ophelia’s Whooping Crane_Acrylic on wood  18 x 12_July 2022(2).png',
         'Assets/gallery/Our Lady Landsloth_Acrylic on canvas  30 x 40_July 2019.png',
         'Assets/gallery/Owl Witch as a Fledgling_Acrylic on canvas  40 x 30_November 2020.png',
         'Assets/gallery/Owl Witch at the End_Acrylic on canvas  48 x 48_May 2022.png',
         'Assets/gallery/Owl Witch in a Baobab_Acrylic on canvas  48 x 48_Febuary 2022.png',
         'Assets/gallery/Owl Witch in Siberia_Acrylic on canvas  48 x 48_July 2021.png',
-        'Assets/gallery/Pink Octopus_Acrylic on canvas  12 x 12_December 2022.png',
-        'Assets/gallery/Pirate Cats_Acrylic on canvas  12 x 12_December 2022.png',
-        'Assets/gallery/Pleistocene Cowgirl_Acrylic on wood panel  24 x 30_October 2024.png',
-        'Assets/gallery/Raven Haven in spring time_Acrylic on Canvas  24 x 30_March 2025.png',
+        'Assets/gallery/Pink Octopus_Acrylic on canvas  12 x 12_December 2022(1).png',
+        'Assets/gallery/Pirate Cats_Acrylic on canvas  12 x 12_December 2022(2).png',
+        'Assets/gallery/Pleistocene Cowgirl_Acrylic on wood panel  24 x 30_October 2024(1).png',
+        'Assets/gallery/Pooka in the Hen House_Acrylic on wood  30 x 40_June 2026.png',
+        'Assets/gallery/Raven Haven in spring time_Acrylic on Canvas  24 x 30_March 2025(2).png',
+        'Assets/gallery/Red Riding Hood with Gelada Baboons_Acrylic on linen  36 x 48_July 2026(1).png',
         'Assets/gallery/Robert Lovett_Acrylic on canvas  36 x 36_November 2021.png',
-        'Assets/gallery/Hippopotamus_Acrylic on linen  30 x 40_March 2026.png',
-        'Assets/gallery/Self-Portrait as a Werewolf_Oils on wood  16 x 16_March 2026.png',
-        'Assets/gallery/Self portrait as a HarpyAcrylic on canvas  24 x 30_August 2010.png',
+        'Assets/gallery/Rose Red and Snow White_Acrylic on linen  30 x 40_July 2026(2).png',
+        'Assets/gallery/Self portrait as a Harpy_Acrylic on canvas  36 x 48_August 2010.png',
+        'Assets/gallery/Self-Portrait as a Werewolf_Oils on wood  16 x 16_March 2026(1).png',
+        'Assets/gallery/Soaring_Acrylic on wood  40 x 30_May 2026(2).png',
         'Assets/gallery/Sphinx_Acrylic on canvas  20 x 30_Febuary 2022.png',
-        'Assets/gallery/Steven_Acrylic on canvas  30 x 40_July 2024.png',
+        'Assets/gallery/Steven_Acrylic on canvas  30 x 40_July 2024(1).png',
         'Assets/gallery/Sumatra_Acrylic on wood panel  24 x 30_Febuary 2024.png',
         'Assets/gallery/Take Me To Church_Acrylic on canvas  30 x 24_May 2011.png',
         'Assets/gallery/The Ballet_Oil and acrylic on linen  36 x 48_October 2025.png',
+        'Assets/gallery/The Battle_Acrylic on linen  36 x 48_Febuary 2026.png',
         'Assets/gallery/The Home Tree_Acrylic on canvas  30 x 40_January 2014.png',
         'Assets/gallery/The Little Mermaid_Acrylic on canvas  30 x 40_August 2004.png',
         'Assets/gallery/The Old Witch and her daughter_Acrylic on canvas 40 x 30_September 2017.png',
-        'Assets/gallery/Thunderbird_Acrylic on canvas  24 x 30_July 2025.png',
+        'Assets/gallery/Thunderbird_Acrylic on canvas  24 x 30_July 2025(2).png',
         'Assets/gallery/Triceratops Herd_Acrylic on wood panel  30 x 24_September 2024.png',
-        'Assets/gallery/Untitled_Acrylic on canvas  18 x 12_October 2024.png',
+        'Assets/gallery/Untitled_Acrylic on canvas  18 x 12_October 2024(2).png',
         'Assets/gallery/Untitled_Acrylic on canvas  24 x 36_May 2017.png',
         'Assets/gallery/Untitled_Acrylic on canvas  30 x 20_May 2012.png',
         'Assets/gallery/Untitled_Acrylic on canvas  30 x 40_August 2020.png',
         'Assets/gallery/Untitled_Acrylic on canvas  30 x 40_December 2024.png',
-        'Assets/gallery/Oligocene_ Acrylic on canvas  40 x 30_October 2018.png',
         'Assets/gallery/Untitled_Acrylic on canvas  40 x 20_May 2023.png',
-        'Assets/gallery/Untitled_Acrylic on canvas  40 x 30_July 2024.png',
-        'Assets/gallery/Untitled_Oils on wood  30 x 20_September 2025.png',
+        'Assets/gallery/Untitled_Acrylic on canvas  40 x 30_July 2024(2).png',
+        'Assets/gallery/Untitled_Oils on wood  30 x 20_September 2025(2).png',
+        'Assets/gallery/Wave Clouds_Acrylic on canvas  36 x 24_May 2024.png',
         'Assets/gallery/Whooping Cranes and Wolves_Acrylic on linen  48 x 36_November 2025.png',
-        'Assets/gallery/With Blue Fox_Oil on canvas  40 x 30_September 2025.png',
-        'Assets/gallery/Jurassic China_Acrylic on linen  36 x 24_January 2026.png',
-        'Assets/gallery/The Battle_Acrylic on linen  36 x 48_Febuary 2026.png',
-        'Assets/gallery/Pooka in the Hen House_Acrylic on wood  30 x 40_June 2026.png',
-        'Assets/gallery/Rose Red and Snow White_Acrylic on linen  30 x 40_July 2026.png',
-        'Assets/gallery/Red Riding Hood with Gelada Baboons_Acrylic on linen  36 x 48_July 2026.png',
-        'Assets/gallery/Soaring_Acrylic on wood  40 x 30_May 2026.png'
+        'Assets/gallery/With Blue Fox_Oil on canvas  40 x 30_September 2025(1).png'
     ];
 
     // Sort images by date (newest to oldest)
@@ -119,36 +116,49 @@ function loadGalleryImages() {
     };
 
     const indexedImages = images.map((path, index) => ({ path, index }));
+    const dateRegex = /([A-Za-z]+)\s+(\d{4})/;
+    const parenRegex = /\((\d+)\)\s*$/;
+
     const sortedImages = indexedImages.sort((a, b) => {
-        // Extract filenames
+        // Extract filenames without extension
         const fileA = a.path.split('/').pop().replace(/\.[^/.]+$/, '');
         const fileB = b.path.split('/').pop().replace(/\.[^/.]+$/, '');
-        
-        // Extract dates from filenames
-        const dateRegex = /([A-Za-z]+)\s+(\d{4})/;
+
         const matchA = fileA.match(dateRegex);
         const matchB = fileB.match(dateRegex);
-        
+
         // If both have dates, sort by date (newest first)
         if (matchA && matchB) {
-            const yearA = parseInt(matchA[2]);
-            const monthA = monthMap[matchA[1].toLowerCase()];
+            const yearA = parseInt(matchA[2], 10);
+            const monthA = monthMap[matchA[1].toLowerCase()] || 0;
             const dateA = new Date(yearA, monthA - 1);
-            
-            const yearB = parseInt(matchB[2]);
-            const monthB = monthMap[matchB[1].toLowerCase()];
+
+            const yearB = parseInt(matchB[2], 10);
+            const monthB = monthMap[matchB[1].toLowerCase()] || 0;
             const dateB = new Date(yearB, monthB - 1);
-            
+
             if (dateA.getTime() !== dateB.getTime()) {
                 return dateB - dateA; // Newest first
             }
-            return a.index - b.index; // Preserve source order for same-date items
+
+            // Same month & year: check trailing parentheses number (versioning)
+            const pA = fileA.match(parenRegex);
+            const pB = fileB.match(parenRegex);
+            const nA = pA ? parseInt(pA[1], 10) : 0;
+            const nB = pB ? parseInt(pB[1], 10) : 0;
+
+            if (nA !== nB) {
+                // Higher number is newer, so sort descending
+                return nB - nA;
+            }
+
+            return a.index - b.index; // stable fallback
         }
-        
+
         // If only one has a date, that one comes first
         if (matchA) return -1;
         if (matchB) return 1;
-        
+
         // If neither has a date, keep original order
         return a.index - b.index;
     }).map(item => item.path);
