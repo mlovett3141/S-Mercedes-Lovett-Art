@@ -16,7 +16,7 @@
     --text-muted: #5a4e5f;
     --gold: #cc9d34;
     --gold-soft: #ddba78;
-    --nav-dark: rgba(18, 14, 25, 0.98);
+    --nav-dark: #120e19;
     --panel-dark: rgba(21, 18, 31, 0.40);
     --section-surface: #f7f0e4;
     --shadow-warm: 0 24px 60px rgba(97, 63, 26, 0.12);
@@ -648,18 +648,25 @@ a:hover {
 @media (max-width: 768px) {
     .nav-menu {
         position: absolute;
-        left: -100%;
-        top: 70px;
+        left: 0;
+        top: 100%;
         flex-direction: column;
-        background-color: #000000;
+        background-color: var(--nav-dark);
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: max-height 0.35s ease, opacity 0.25s ease;
         gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 0;
     }
 
     .nav-menu.active {
-        left: 0;
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
     }
     .nav-link.active {
         background-color: transparent;
