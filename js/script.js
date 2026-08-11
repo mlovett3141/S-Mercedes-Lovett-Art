@@ -105,7 +105,11 @@ function loadGalleryImages() {
         'Assets/gallery/Whooping Cranes and Wolves_Acrylic on linen  48 x 36_November 2025.png',
         'Assets/gallery/With Blue Fox_Oil on canvas  40 x 30_September 2025.png',
         'Assets/gallery/Jurassic China_Acrylic on linen  36 x 24_January 2026.png',
-        'Assets/gallery/The Battle_Acrylic on linen  36 x 48_Febuary 2026.png'
+        'Assets/gallery/The Battle_Acrylic on linen  36 x 48_Febuary 2026.png',
+        'Assets/gallery/Pooka in the Hen House_Acrylic on wood  30 x 40_June 2026.png',
+        'Assets/gallery/Rose Red and Snow White_Acrylic on linen  30 x 40_July 2026.png',
+        'Assets/gallery/Red Riding Hood with Gelada Baboons_Acrylic on linen  36 x 48_July 2026.png',
+        'Assets/gallery/Soaring_Acrylic on wood  40 x 30_May 2026.png'
     ];
 
     // Sort images by date (newest to oldest)
@@ -114,10 +118,11 @@ function loadGalleryImages() {
         'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12
     };
 
-    const sortedImages = images.sort((a, b) => {
+    const indexedImages = images.map((path, index) => ({ path, index }));
+    const sortedImages = indexedImages.sort((a, b) => {
         // Extract filenames
-        const fileA = a.split('/').pop().replace(/\.[^/.]+$/, '');
-        const fileB = b.split('/').pop().replace(/\.[^/.]+$/, '');
+        const fileA = a.path.split('/').pop().replace(/\.[^/.]+$/, '');
+        const fileB = b.path.split('/').pop().replace(/\.[^/.]+$/, '');
         
         // Extract dates from filenames
         const dateRegex = /([A-Za-z]+)\s+(\d{4})/;
@@ -134,7 +139,10 @@ function loadGalleryImages() {
             const monthB = monthMap[matchB[1].toLowerCase()];
             const dateB = new Date(yearB, monthB - 1);
             
-            return dateB - dateA; // Newest first
+            if (dateA.getTime() !== dateB.getTime()) {
+                return dateB - dateA; // Newest first
+            }
+            return a.index - b.index; // Preserve source order for same-date items
         }
         
         // If only one has a date, that one comes first
@@ -142,8 +150,8 @@ function loadGalleryImages() {
         if (matchB) return 1;
         
         // If neither has a date, keep original order
-        return 0;
-    });
+        return a.index - b.index;
+    }).map(item => item.path);
 
     function setMasonrySpan(item) {
         const rowHeight = 8;
